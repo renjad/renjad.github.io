@@ -1,0 +1,506 @@
+.background-image img {
+  position: fixed;
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.reminder {
+  display: block;
+  position: fixed;
+  background: linear-gradient(to bottom, #d4d4ba, #80868a);
+  margin-top: 95px;
+  width: 220px;
+  padding: 15px;
+  border-radius: 0 0 20px 0;
+}
+.reminder-text {
+  margin-bottom: 10px;
+  font-size: 2.5vmin;
+  color: maroon;
+}
+.message {
+  font-size: 2.3vmin;
+}
+.whole-form {
+  margin: 104px 0  auto;
+  width:63vw;
+}
+.heading {
+  position: relative;
+  background-color:rgb(0,0,0,0.6);
+  margin: auto;
+  color:#FFFFFF;
+  padding:10px 10px 10px 10px;
+  border-radius:15px 15px 0px 0px;
+  text-align: center;
+  font-size: 3.3vmin;
+}
+.main	{
+  background-color:rgb(0,0,0,0.5);
+  width:100%;
+  margin:auto;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0 0 10px 10px;
+}
+form {
+  padding: 15px;
+}
+.personal-info {
+  display: grid;
+  margin-top: 18px;
+  margin-left: 18px;
+  margin-right: 50px;
+}
+.names {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  margin-bottom: 8px;
+}
+.name-text {
+  padding-top: 15px;
+}
+.firstname {
+  line-height: 52px;
+  border-radius: 6px;
+  padding: 0 30px;
+  font-size: 16px;
+}
+.firstlabel {
+  font-size: 14px;
+  margin-left: 8px;
+} 
+.lastname {
+  line-height: 52px;
+  border-radius: 6px;
+  padding: 0 30px;
+  font-size: 16px;
+}
+.lastlabel{
+  font-size:14px;
+  margin-left: 8px;
+}
+.birthday-age {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  margin-bottom: 28px;
+}
+.birth-age-align {
+  display: flex;
+}
+.birthday-text {
+  padding-top: 15px;
+  margin-right: 20px;
+}
+.age-display {
+  display: flex;
+}
+.birthday {
+  line-height: 46px;
+  width:245px;
+  border-radius: 6px;
+  padding: 0 35px;
+  margin-right: 70px;
+  font-size: 16px;
+  color: #555;
+}
+.age-text {
+  margin-right: 10px;
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.age {
+  background-color: #fff;
+  line-height: 46px;
+  width:160px;
+  text-align: center;
+  margin-top: 2px;
+  border-radius: 6px;
+  padding: 0 35px;
+  font-size: 16px;
+  color:#555;
+} 
+.sex {
+  display: grid;
+  grid-template-columns: 0.15fr 1fr;
+  margin-bottom: 28px;
+}
+.sex-text {
+  padding-top: 15px;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+}
+/*hide original SELECT element:*/
+.custom-select select {
+  display: none;
+} 
+.select-selected{
+  background-color: white;
+  height: 46px;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left:115px;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 13px;	
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #555;
+  padding: 10px 20px;
+  border: 1px solid black ;
+  width:140px;
+  border-radius: 6px;
+  border-color: black #555 #555 black;
+  cursor: pointer;
+}
+/*style items (options):*/
+.select-items {
+  background-color: white;
+  width:140px;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.phone-number {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  margin-bottom: 28px;
+}
+.phone-number-text {
+  padding-top: 15px;
+}
+.number{
+  line-height: 46px;
+  width:230px;
+  border-radius: 6px;
+  padding: 0 33px;
+  font-size: 16px;
+  color: #555;
+}
+.address {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr;
+  margin-bottom: 28px; 
+  padding-right: 52px;
+}
+.address-text {
+  padding-top: 15px;
+  margin-right: 25px;
+}
+.input-address {
+  line-height: 52px;
+  border-radius: 6px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  width: 11rem;
+  font-size: 16px;
+}
+.logo {
+  margin-right: 20px;
+}
+.health-decleration-form {
+  margin-left: 18px;
+}
+.the-options {
+  margin-bottom: 28px;
+}
+.qr-code  {
+  width:100%;
+  margin:auto;
+  margin-bottom: 15px;
+  border-radius: 0.5rem;
+  border: 2px solid #e7e7e0;
+  padding: 0.5rem; 
+}
+.QRform {
+  background-color:black;
+  color:white	;
+  padding:10px 0px 10px 0px;
+  text-align:center;
+  border-radius:15px 15px 0px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.qr-pic {
+  margin: auto;
+  width: 40%;
+  height: 40%;
+}
+.button {
+  position: relative;
+  height: 60px;
+}
+button {
+  position: absolute;
+  right: 0;
+  background-color:#d4d4ba;
+  display:block;
+  text-align:center;
+  border-radius:54px;
+  border:2px solid rgb(105, 105, 105);
+  padding:16px 50px;
+  outline:none;
+  color: black;
+  cursor:pointer;
+  font-size:20px;
+  transition: background-color 0.15s, color 0.15s;
+} 
+button:hover{
+  background-color:#939799;
+  color: #d4d4ba;
+}
+button:active {
+  opacity: 0.5;
+}
+.footer {
+  background: linear-gradient(to right, #d4d4ba, #80868a);
+  width: 100%;
+  height: 6rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.footer img {
+  height: 60px;
+  margin-left: 20px;
+}
+.copyright {
+  font-size: 2vmin;
+}
+
+@media only screen and (max-width:850px) {
+
+  .background-image img {
+    margin-top: 112px;
+  }
+
+  nav {
+    height: 80px;
+    padding-right: 15px;
+    border-radius: 0 0 15px 15px;
+  }
+  .logo img {
+    width: 60px;
+  }
+  .navbar {
+    display: flex;
+    right: 0;
+    position: absolute; 
+    background: linear-gradient(to right, #d4d4ba, #80868a);
+    height: 147px;
+    margin-top: 80px;
+    text-align: center;
+    margin-right: -250px;
+    padding-right: 0px;
+    border-radius: 0 15px 0 15px;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  .navbar.active {
+    margin-right: 0px;
+    margin-top: 80px;
+  }
+  .logo {
+    margin-right: 0px;
+  }
+  .muni-pihd {
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    padding-top: 11px;
+    gap: 1rem;
+  }
+  .nav-links li a {
+    margin: 5px 10px;
+    border-radius: 0 10px 0 10px;
+  }
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .reminder {
+    display: block;
+    position: fixed;
+    background: linear-gradient(to bottom, #d4d4ba, #80868a);
+    margin-top: 70px;
+    width: 100%;
+    padding: 10px 20px 5px;
+    border-radius: 0 0 15px 15px;
+    z-index: 9;
+  }
+  .reminder-text {
+    margin: 0px;
+  }
+  .message {
+    margin-left: 10px;
+  }
+  .whole-form {
+    margin: 130px 0  auto;
+    width:98%;
+  }
+  .heading {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 123px;
+    background-color:black;
+    margin: auto;
+    color:#FFFFFF;
+    padding:10px 10px 10px 10px;
+    border-radius:0px 0px 0px 0px;
+    text-align: center;
+    font-size: 3.3vmin;
+    z-index: 5;
+  }
+  form {
+    padding: 5pX;
+  }
+  .personal-info {
+    display: grid;
+    margin: 18px;
+  }
+  .names {
+    display: block;
+    width: 100%; 
+  }
+  .name-text {
+    padding-top: 0px;
+    margin-bottom: 5px;
+  }
+  .firstname {
+    line-height: 52px;
+    border-radius: 6px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .firstlabel {
+    display: none;
+  } 
+  .lastname {
+    line-height: 52px;
+    border-radius: 6px;
+    padding: 0 30px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .lastlabel{
+    display: none;
+  }
+  .birthday-age {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .birth-age-align {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .birthday-text {
+    margin-bottom: 5px;
+  }
+  .birthday {
+    line-height: 46px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0 30px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  .age-text {
+    display: none;
+  }
+  .age {
+    line-height: 43px;
+    width: 95%;
+    margin-left: 5px;
+    border-radius: 6px;
+    padding: 0 30px;
+    font-size: 16px;
+    color:#555;
+  } 
+  .sex {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .sex-text {
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+  .phone-number {
+    display: block;
+    margin-bottom: 0px;
+  }
+  .phone-number-text {
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+  .number {
+    width: 245px;
+  }
+  .address {
+    display: block;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  .address-text {
+    margin-bottom: 5px;
+  }
+  .input-address {
+    line-height: 52px;
+    border-radius: 6px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .QRform {
+    margin-bottom: 0px;
+  }
+  .qr-pic {
+    margin: auto;
+    width: 55%;
+    height: 55%;
+  }
+  .button {
+    margin-bottom: 15px;
+  }
+  .footer {
+    border-radius: 20px 20px 0 0;
+  }
+  .footer .logo img {
+    margin: 0 10px 0 0;
+  }
+}

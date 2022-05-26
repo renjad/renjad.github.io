@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/navbar.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sub-pages.css">
+
+</head>
+<body>
+  <div class="background-image">
+		<img src="images/municipal-hall.jpg" alt="">
+	</div>
+	<nav class="nav-container">
+		<div class="logo-text">
+			<div class="logo">
+				<img src="images/logo.png" alt="balagtas municipality logo">
+			</div>
+			<div class="muni-pihd">
+					<h2>Municipality of Balagtas</h2>
+					<h3>Personal Information and Health Declaration QR Code Generator</h3>
+			</div>
+		</div>
+		<div class="navbar">
+			<ul id="menuList" class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="privacy-notice.html">Privacy Notice</a></li>
+			</ul>
+		</div>
+		<div class="menu-icon">
+			<img src="images/menu-icon.svg" alt="menu-icon">
+		</div>	
+	</nav>
+  <section class="wrapper">
+		<div class="whole-form">
+			<div class="heading">
+				<h1>About the Website</h1>
+			</div>
+			<div class="main">
+				<form method="post">
+          <div class="about">
+            <p>
+              Balagtas QR Code Generator is a website commissioned by the Local Government Unit, an official government entity in the Philippines as official QR Code generator for the queuing system in the Balagtas Municipal Hall
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+	<section class="footer">
+		<div class="sti-logo">
+			<img src="images/sti-balagtas-logo.png" alt="STI logo">
+		</div>
+		<div class="copyright">
+			<h4>COPYRIGHT &copy; 2022 | All Rights Reserved</h4>
+			<p>Municipality of Balagtas, Province of Bulacan</p>
+			<p>Capstone Project</p>
+			<p>STI College Balagtas</p>
+		</div>
+		<div class="logo">
+			<img src="images/logo.png" alt="balagtas municipality logo">
+		</div>
+	</section>
+
+	<script>
+		const toggleButton = document.getElementsByClassName('menu-icon')[0]
+		const navbarlinks = document.getElementsByClassName('navbar')[0]
+
+		toggleButton.addEventListener('click', () => {
+ 			navbarlinks.classList.toggle('active')
+		});
+	</script>
+	
+</body>
+</html>

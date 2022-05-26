@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Balagtas PI and Health Registration QR Code Generator</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles/navbar.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/general.css">
+
+</head>
+<body>
+	<div class="background-image">
+		<img src="images/municipal-hall.jpg" alt="">
+	</div>
+	<nav class="nav-container">
+		<div class="logo-text">
+			<div class="logo">
+				<img src="images/logo.png" alt="balagtas municipality logo">
+			</div>
+			<div class="muni-pihd">
+					<h2>Municipality of Balagtas</h2>
+					<h3>Personal Information and Health Declaration QR Code Generator</h3>
+			</div>
+		</div>
+		<div class="navbar">
+			<ul id="menuList" class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="privacy-notice.html">Privacy Notice</a></li>
+			</ul>
+		</div>
+		<div class="menu-icon">
+			<img src="images/menu-icon.svg" alt="menu-icon">
+		</div>	
+	</nav>
+	<section class="reminder">
+		<div class="reminder-text">
+			<h4>Important Reminder:</h4>
+		</div>
+		<div class="message">
+			<p>
+				Please complete this form accurately. Any false information provided may make you criminally liable under applicable laws and local ordinance. And make sure to put your active mobile number, it is needed for the notification. 
+			</p>
+		</div>
+	</section>
+	<section class="wrapper">
+		<div class="whole-form">
+			<div class="heading">
+				<h1>Personal Information and Health Declaration Form</h1>
+			</div>
+			<div class="main">
+				<form method="post" action="#">
+					<div class="personal-info">
+						<div class="names">
+							<div class="name-text">
+								<p>Name:</p>
+							</div>
+							<div>
+								<input class="firstname" type="text" name="first_name" id="firstname" placeholder="Enter First Name" required/>
+								<br>
+								<label class="firstlabel">First Name</label>
+							</div>
+							<div class="lastname-box">
+								<input class="lastname" type="text" name="last_name" id="lastname" placeholder="Enter Last Name" required/>
+								<br>
+								<label class="lastlabel">Last Name</label>
+							</div>
+						</div>
+						<div class="birthday-age">
+							<div class="birthday-text">
+								<p>Birthday:</p>
+							</div>
+							<div class="birth-age-align">
+								<div>
+									<input class="birthday" type="text" name="txtbirthdate" value="" id="txtbirthdate" placeholder="yyyy-mm-dd" onchange="submitBday()" required/>
+								</div>
+								<div class="age-display">
+									<div class="age-text">
+										<p>Age:</p>
+									</div>
+									<div>
+										<input class="age" name="txtage" id="txtage" disabled>
+									</div>
+								</div>
+							</div>					
+						</div>
+						<div class="sex">
+							<div class="sex-text">
+								<p>Sex:</p>
+							</div>
+							<div class="custom-select">
+								<select id="sex">
+									<option value="0">Select</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="phone-number">
+							<div class="phone-number-text">
+								<p>Phone Number:</p>
+								<p style="font-size: 0.8rem; color: rgb(187, 187, 187);">Please input your number with the country code(i.e <i>+639510961175</i>).</p>
+							</div>
+							<div>
+								<input class="number" type="text" name="phone" id="phonenumber" placeholder="Enter Phone Number" required/>
+							</div>
+						</div>
+						<div class="address">
+							<div class="address-text">
+								<p>Address:</p>
+							</div>
+							<div>
+								<input class="input-address" type="text" name="address" id="barangay" placeholder="Enter Barangay" required>
+							</div>
+							<div>
+								<input class="input-address" type="text" name="address" id="municipality" placeholder="Enter Municipality" required>
+							</div>
+							<div>
+								<input class="input-address" type="text" name="address" id="province" placeholder="Enter Province" required>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<br>
+					<div class="health-decleration-form">
+						<div class="questions">
+							<p>Did you visit any hospital, clinic or nursing home within the last 14 days?</p>
+						</div>
+						<div class="the-options">
+							<div class="options">
+								<p>Option:</p>
+							</div>
+							<div class="custom-select">
+								<select id="visit">
+									<option value="0">Select</option>
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+								</select>
+							</div>
+						</div>					
+						<div>
+							<div class="questions">
+								<p>Have you undertaken any COVID Test?</p>
+							</div>
+							<div class="the-options">
+								<div class="options">
+									<p>Option:</p>
+								</div>
+								<div class="custom-select">
+									<select id="test">
+										<option value="0">Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+									</select>
+								</div>
+							</div>			
+						</div>
+						<div>
+							<div class="questions">
+								<p>Result of the test:</p>
+							</div>
+							<div class="the-options">
+								<div class="options">
+									<p>Option:</p>
+								</div>
+								<div class="custom-select">
+									<select id="result">
+										<option value="0">Select</option>
+										<option value="Positive">Positive</option>
+										<option value="Negative">Negative</option>
+										<option value="Not Tested">Not Tested</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<br>
+					<div class="qr-code">
+						<div class="QRform">
+								<p>Scan QR Code</p>
+						</div>
+						<div class="qr-pic">
+							<img src=
+							"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L0" alt="qr code pic"
+							class="qr-code img-thumbnail img-responsive"/>	
+						</div>
+						<script src=
+							"https://code.jquery.com/jquery-3.5.1.js">
+						</script>										
+					</div>
+					<div class="button">
+						<button type="button" id="generate" onclick="check()">
+							<b>Generate</b>
+						</button>
+					</div>					
+				</form>
+			</div>
+		</div>
+	</section>	
+		
+	<section class="footer">
+		<div class="sti-logo">
+			<img src="images/sti-balagtas-logo.png" alt="STI logo">
+		</div>
+		<div class="copyright">
+			<h4>COPYRIGHT &copy; 2022 | All Rights Reserved</h4>
+			<p>Municipality of Balagtas, Province of Bulacan</p>
+			<p>Capstone Project</p>
+			<p>STI College Balagtas</p>
+		</div>
+		<div class="logo">
+			<img src="images/logo.png" alt="balagtas municipality logo">
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/overcast/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script src="index.js"></script>
+
+</body>
+</html>
